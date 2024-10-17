@@ -27,9 +27,9 @@ namespace ShareManV3.CustomForms
             nUD_LastDiv.Controls[0].Visible = false;
 
             bindControlls();
-            setFilter();
-            cb_TimeRange.SelectedIndex = 3;    //Monat
-            showTrendline();
+            //setFilter();
+            //cb_TimeRange.SelectedIndex = 3;    //Monat
+            //showTrendline();
             gridControl1.EmbeddedNavigator.ButtonClick += EmbeddedNavigator_ButtonClick;
         }
         private void EmbeddedNavigator_ButtonClick(object sender, NavigatorButtonClickEventArgs e)
@@ -66,7 +66,7 @@ namespace ShareManV3.CustomForms
             cb_Exchange.DataBindings.Add("SelectedValue", bindingSource, "Börse.SEID", true, DataSourceUpdateMode.Never);
 
 
-            cb_Interavl.DataSource = xpInterval;
+         //   cb_Interavl.DataSource = xpInterval;
             cb_Interavl.DisplayMember = "Interval_Name";
             cb_Interavl.ValueMember = "DID";
             cb_Interavl.DataBindings.Add("SelectedValue", bindingSource, "Div_Intervall.DID", true, DataSourceUpdateMode.Never);

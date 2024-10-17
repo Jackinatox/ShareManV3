@@ -497,6 +497,7 @@
             this.ClientSize = new System.Drawing.Size(1059, 536);
             this.Name = "ShowStock";
             this.Text = " ";
+            this.Controls.Add(this.tableLayoutPanel1);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -522,6 +523,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.xpCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
