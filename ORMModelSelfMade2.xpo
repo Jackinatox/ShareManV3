@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="76d52fce-6cea-4fae-a3d9-7f47f40e5dfb" namespace="ShareManV3.databaseSelfMade" dataBaseShemaInfo="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" generateConnectionHelper="true" generateStoredProcedures="false" fieldNameCase="Unchanged" generateDefaultConstructors="false" useNameOf="true" connectionStringName="databaseSelfMade" createdInVersion="24.1.5.0" generateJsonSerializationContractResolver="false" generateServiceCollectionExtensions="false" lastModifiedInVersion="24.1.5.0" name="databaseSelfMade" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+  <classes>
+    <dataBaseObjectModelHasClasses Id="3b6a1f6b-2d2f-46ab-9a18-79820e82c45f">
+      <xpObject Id="5b375c33-f306-48f8-acd4-a94a80e8ab97" name="MyCurrency" baseClass="PersistentBase" userFileName="MyCurrency" designerFileName="MyCurrency.Designer" className="MyCurrency" virtualBaseClass="PersistentBase" virtualName="MyCurrency">
+        <fields>
+          <generalXpObjectHasFields Id="ceb6c5e2-1d65-4a48-9035-77e02630a3ec">
+            <field Id="b4d90c60-e19e-4fe5-90ea-146f6a63ea7c" name="CID" columnType="Int32" key="true" isIdentity="true" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d864dc00-eeed-44c2-8214-c483f241c007">
+            <field Id="4f6d5cd3-963e-4a83-a02a-c3a745e06c8e" name="CurrencySymbol" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="a7ca1276-048c-4564-9306-6b921073b5e6">
+            <index Id="beb2cd5c-8070-4765-a3f3-c883592b6f03" name="UniqueCurrencySymbol" unique="true">
+              <fieldsInIndex>
+                <indexReferencesFields Id="1df4a777-66fd-47c0-9135-606239b5b4d2">
+                  <fieldMoniker Id="4f6d5cd3-963e-4a83-a02a-c3a745e06c8e" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+        <saTargets>
+          <simpleAssociation Id="f34e37f3-0903-4e37-940c-83475431361e" sourceCollectionName="Shares" name="ShareReferencesMyCurrency" targetFieldName="Currency">
+            <xpObjectMoniker Id="87d8acbb-f9af-462f-ae2b-4d1e98089381" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="ef8deb94-60bc-4242-a12e-4830f3e82825">
+            <collectionField Id="f5f33d0f-8bc4-4f89-be66-b1e44c73c597" name="Shares" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="ee79cb99-baac-413c-bc14-2b41e0aca12c">
+      <xpObject Id="3668302b-5967-4b07-bc14-68d98566a093" name="Div_Intervall" baseClass="PersistentBase" userFileName="Div_Intervall" designerFileName="Div_Intervall.Designer" className="Div_Intervall" virtualBaseClass="PersistentBase" virtualName="Div_Intervall">
+        <fields>
+          <generalXpObjectHasFields Id="4e5c63fa-733b-4890-96e6-06cc897f1171">
+            <field Id="c5cc304d-8d10-40ed-a69d-24ca2efc2165" name="DID" columnType="Int32" key="true" isIdentity="true" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="750f29d2-8901-44d7-9603-c6eaf2e79ecd">
+            <field Id="857c969a-a5ac-4ebc-b694-e6c9c06d450d" name="Intervall" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="3c16b9e1-9aac-4066-91b2-87261d91d332">
+            <index Id="0e1fed45-1967-442f-9501-014a928940e5" name="UniqueIntervall" unique="true">
+              <fieldsInIndex>
+                <indexReferencesFields Id="12242f2b-868f-4b7e-bca5-990d01769814">
+                  <fieldMoniker Id="857c969a-a5ac-4ebc-b694-e6c9c06d450d" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+        <saTargets>
+          <simpleAssociation Id="92898c7b-cb72-4d4e-846e-e4861454b393" sourceCollectionName="Shares" name="ShareReferencesDiv_Intervall" targetFieldName="Div_Intervall">
+            <xpObjectMoniker Id="87d8acbb-f9af-462f-ae2b-4d1e98089381" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="b5b71f06-0379-4959-a914-1d48ac581344">
+            <collectionField Id="3ad948e1-56d5-4926-a78c-2d8e7a689599" name="Shares" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="0cbe6180-6954-41c3-9084-05f3a43b7beb">
+      <xpObject Id="5d0c59aa-3681-4cc6-9d1a-e8e80d583102" name="StockExchange" baseClass="PersistentBase" userFileName="StockExchange" designerFileName="StockExchange.Designer" className="StockExchange" virtualBaseClass="PersistentBase" virtualName="StockExchange">
+        <fields>
+          <generalXpObjectHasFields Id="6dae3565-a16c-4205-9b41-b1620ae7aa32">
+            <field Id="2b66b380-89ff-44c4-8df5-ec5a6789cf86" name="SEID" columnType="Int32" key="true" isIdentity="true" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f833c5d8-efbb-4c35-ae5b-7bade154ac5d">
+            <field Id="bd2d221f-2ceb-49c9-87f2-86b6423d79de" name="Tradename" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4ad3e46f-1421-4abe-a40a-5ad5eb282a02">
+            <field Id="a5fe6ba2-379c-47fd-b441-4d6b2dad4989" name="Ort" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="593acc07-c070-4804-8a88-744b0e39e83c">
+            <index Id="1c66cfce-08cf-4832-916b-fb2c0e8997f3" name="UniqueTradeName" unique="true">
+              <fieldsInIndex>
+                <indexReferencesFields Id="2b27a507-9930-4176-92b9-541b7b31a14f">
+                  <fieldMoniker Id="bd2d221f-2ceb-49c9-87f2-86b6423d79de" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+        <saTargets>
+          <simpleAssociation Id="94bf6b51-49f3-499b-b0cf-f7d7ae007b0f" sourceCollectionName="Shares" name="ShareReferencesStockExchange" targetFieldName="Börse">
+            <xpObjectMoniker Id="87d8acbb-f9af-462f-ae2b-4d1e98089381" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="89be73fc-247a-460a-9437-21400d942625">
+            <collectionField Id="ce42f00d-cc40-403b-a18e-bc6a4663bd57" name="Shares" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="b46eb581-b245-43d5-88e3-bfb664abbbf2">
+      <xpObject Id="59d94c00-df75-4f89-a173-12ceb4219306" name="Stock_type" baseClass="PersistentBase" userFileName="Stock_type" designerFileName="Stock_type.Designer" className="Stock_type" virtualBaseClass="PersistentBase" virtualName="Stock_type">
+        <fields>
+          <generalXpObjectHasFields Id="b64b7217-93b1-4266-ac49-9e135593bfac">
+            <field Id="952d0cb4-594d-4601-aa51-75e7bbd6f082" name="STID" columnType="Int32" key="true" isIdentity="true" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="911e02cb-034d-49c7-8f59-b0a5ed868895">
+            <field Id="d21b7ee6-b72a-47d0-b685-fd8a0cfa8fe5" name="ShareType" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="28dd5734-9b47-4d05-83b6-dc4036ae118b">
+            <index Id="3fa96657-7d50-4dc8-b140-80e224358290" name="UniqueShareType" unique="true">
+              <fieldsInIndex>
+                <indexReferencesFields Id="5132058e-6811-463d-9ad4-1204c412b001">
+                  <fieldMoniker Id="d21b7ee6-b72a-47d0-b685-fd8a0cfa8fe5" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+        <saTargets>
+          <simpleAssociation Id="fe474c52-0dda-47a5-8a2c-1afb596728f2" sourceCollectionName="Shares" name="ShareReferencesStock_type" targetFieldName="StockType">
+            <xpObjectMoniker Id="87d8acbb-f9af-462f-ae2b-4d1e98089381" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="77d64bb4-2d4f-4133-bd0f-be45d361bfdc">
+            <collectionField Id="76925424-63e7-4c11-af5c-c313e274ed15" name="Shares" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="45bb6273-d8cc-4764-9e00-7cc9a19aaaed">
+      <xpObject Id="87d8acbb-f9af-462f-ae2b-4d1e98089381" name="Share" baseClass="PersistentBase" userFileName="Share" designerFileName="Share.Designer" className="Share" virtualBaseClass="PersistentBase" virtualName="Share">
+        <fields>
+          <generalXpObjectHasFields Id="9e5f7bdb-4607-45f6-873c-732cd29a1beb">
+            <field Id="1e96a777-d809-4759-b4b2-984b2c0d6d1e" name="ID" columnType="Int32" key="true" isIdentity="true" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f889ff14-9238-4fcd-91b6-851230941b97">
+            <field Id="6f19ad1a-aa13-44b6-a700-520ce0b0f6c6" name="ISIN" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ee65b948-8e21-4398-92ff-9777b747f612">
+            <field Id="c91fc0b3-60a8-4811-8fc5-f5167067097c" name="Name" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c09ea97f-785a-42ee-88db-f71cd115fcea">
+            <field Id="a596365f-3386-41e2-88ff-43eba54718b5" name="AusThe" columnType="Boolean" virtualColumnType="Boolean" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="cd23016d-29df-4b6e-bc7e-58bd7be6c48e">
+            <field Id="58da9ef1-4177-4279-bcf1-d01c21aef6d0" name="LetzteHauptversammlung" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="19974c75-d40d-4212-9a6f-578e77640811">
+            <field Id="b35e9db5-3107-4b7d-ad1f-a6d1b86e6088" name="LetzteDividendeDate" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="131bb23b-da5a-43f1-8cbb-800c89ce63f6">
+            <field Id="940a1afa-79aa-4692-a225-5c89227bca88" name="LetzteDividendeValue" columnType="Double" virtualColumnType="Double" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="af68ed6e-fc07-4dba-8bf9-0cd0b8457875">
+            <field Id="c1b47886-3773-4082-9dca-3856251cfd60" name="Notes" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c44073e6-f675-4661-9b83-e35df5b3ec43">
+            <field Id="a2fe1cbe-098e-4bea-9a01-52684a0096d0" name="Div_Intervall" columnType="Int32" virtualColumnType="Div_Intervall" logicalType="Div_Intervall" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7392d7e5-6c02-4ad0-b51e-af95627c7bc8">
+            <field Id="82dacfca-fb5e-4848-a47d-23efceddfdbd" name="Börse" columnType="Int32" virtualColumnType="StockExchange" logicalType="StockExchange" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="54a5a4cb-615c-44c6-a261-884074faa2b8">
+            <field Id="3fe0800d-172b-498e-979d-0039b289e590" name="Currency" columnType="Int32" virtualColumnType="MyCurrency" logicalType="MyCurrency" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="47c3e385-a36d-491c-b27d-05dafb03ea93">
+            <field Id="878ed4b6-5843-45d7-9608-6092cfffd9ec" name="StockType" columnType="Int32" virtualColumnType="Stock_type" logicalType="Stock_type" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="bd324da2-2c1c-46f1-b16f-b0a41c2b652f">
+            <field Id="050a110d-13f8-4060-b4cf-0d607c93249e" name="TeleTextName" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="64f08a00-3992-46a5-ad9e-495d26fb01ce">
+            <index Id="e4b6d27c-868f-4010-abc6-98e33096cd52" name="UniqueISIN" unique="true">
+              <fieldsInIndex>
+                <indexReferencesFields Id="f746c493-2fb5-4cb6-98c8-b46b145dd7ec">
+                  <fieldMoniker Id="6f19ad1a-aa13-44b6-a700-520ce0b0f6c6" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+        <saTargets>
+          <simpleAssociation Id="c3378c8c-149c-48de-8b4e-4893bb105e10" sourceCollectionName="Stock_Proce_Historys" name="Stock_Proce_HistoryReferencesShare" targetFieldName="share">
+            <xpObjectMoniker Id="e3b522ef-9268-487e-a44f-6bc929c17f9f" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="cedd85d8-48cd-47cb-9cb1-4cccd6ec523d">
+            <collectionField Id="94e438f4-4d71-42ac-82f0-6eb08f7a14f7" name="Stock_Proce_Historys" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="e3259176-b413-4274-b20a-f64242662985">
+      <xpObject Id="e3b522ef-9268-487e-a44f-6bc929c17f9f" name="Stock_Price_History" baseClass="PersistentBase" userFileName="Stock_Price_History" designerFileName="Stock_Price_History.Designer" className="Stock_Price_History" virtualBaseClass="PersistentBase" virtualName="Stock_Price_History">
+        <fields>
+          <generalXpObjectHasFields Id="4785df89-4a6c-4a6c-bcf3-8422a09511d2">
+            <field Id="567c063b-633e-4a67-8545-b5ed6c8dcb36" name="SPHID" columnType="Int32" key="true" isIdentity="true" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3cf6143a-39d7-47a3-b6d6-c93549193f1c">
+            <field Id="3fbe25e9-453c-4b30-9938-5e9331711a5c" name="share" columnType="TimeSpan" virtualColumnType="Share" logicalType="Share" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="da811159-322f-454d-a353-9362d954ddf2">
+            <field Id="9cce4cdc-d466-4bfe-8b77-b27eec947c8f" name="Date" columnType="DateTime" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4d5a8947-8d20-4eef-b28e-b10716c6cce1">
+            <field Id="1b54f458-9abe-4b13-b5bd-cdaab0a0db60" name="Price" columnType="Double" virtualColumnType="Double" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d20fb6c9-dba4-4f8b-b4ae-6021cb11d6cd">
+            <field Id="aacdf6e1-a012-40f9-8115-58c9a4871da0" name="Notes" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="c76984ac-12d6-43ef-9c73-4ebb45a8a5dd">
+            <index Id="7b7f0068-9b30-451d-a275-08759714fd57" name="UniqueCombo" unique="true">
+              <fieldsInIndex>
+                <indexReferencesFields Id="749544ce-aa87-4c6f-893b-53330bda6b60">
+                  <fieldMoniker Id="3fbe25e9-453c-4b30-9938-5e9331711a5c" />
+                </indexReferencesFields>
+                <indexReferencesFields Id="ffc4a334-a1a7-4118-87a4-969b2e139638">
+                  <fieldMoniker Id="9cce4cdc-d466-4bfe-8b77-b27eec947c8f" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+  </classes>
+</dataBaseObjectModel>
