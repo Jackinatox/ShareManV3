@@ -78,7 +78,6 @@ namespace ShareManV3
                 JArray dataArray = (JArray)jsonResponse["data"];
                 List<StockData> stockList = dataArray.ToObject<List<StockData>>();
                 worker.ReportProgress(50);
-                dbHelper.UpdateStockIndex(stockList);
                 worker.ReportProgress(100);
 
             }

@@ -72,6 +72,10 @@
             this.btn_NewStock = new System.Windows.Forms.Button();
             this.lbl_StockName = new System.Windows.Forms.Label();
             this.xpShares = new DevExpress.Xpo.XPCollection(this.components);
+            this.xpStockExchanges = new DevExpress.Xpo.XPCollection(this.components);
+            this.xpTypes = new DevExpress.Xpo.XPCollection(this.components);
+            this.xpCollection1 = new DevExpress.Xpo.XPCollection(this.components);
+            this.xpBindingSource = new DevExpress.Xpo.XPBindingSource(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -89,6 +93,10 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xpShares)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpStockExchanges)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpTypes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpCollection1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -114,15 +122,10 @@
             this.splitContainer1.Location = new System.Drawing.Point(3, 152);
             this.splitContainer1.Name = "splitContainer1";
             // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.gridControl1);
-            // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.AutoScroll = true;
             this.splitContainer1.Panel2.AutoScrollMinSize = new System.Drawing.Size(200, 0);
-            this.splitContainer1.Panel2.Controls.Add(this.chartControl1);
             this.splitContainer1.Size = new System.Drawing.Size(1053, 381);
             this.splitContainer1.SplitterDistance = 386;
             this.splitContainer1.TabIndex = 0;
@@ -200,8 +203,6 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(3, 45);
             this.tabControl1.Name = "tabControl1";
@@ -359,8 +360,6 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.tb_TelName);
-            this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -387,8 +386,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.lbl_StockName);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
@@ -399,12 +396,6 @@
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.btn_del);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.btn_cancleEdit);
-            this.panel2.Controls.Add(this.btn_Save);
-            this.panel2.Controls.Add(this.btn_NewStock);
             this.panel2.Location = new System.Drawing.Point(859, 8);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(188, 30);
@@ -480,12 +471,30 @@
             this.xpShares.ObjectType = typeof(ShareManV3.databaseSelfMade.Share);
             this.xpShares.Session = this.main_session;
             // 
+            // xpStockExchanges
+            // 
+            this.xpStockExchanges.ObjectType = typeof(ShareManV3.databaseSelfMade.StockExchange);
+            this.xpStockExchanges.Session = this.main_session;
+            // 
+            // xpTypes
+            // 
+            this.xpTypes.ObjectType = typeof(ShareManV3.databaseSelfMade.Stock_type);
+            this.xpTypes.Session = this.main_session;
+            // 
+            // xpCollection1
+            // 
+            this.xpCollection1.ObjectType = typeof(ShareManV3.databaseSelfMade.Div_Intervall);
+            this.xpCollection1.Session = this.main_session;
+            // 
+            // xpBindingSource
+            // 
+            this.xpBindingSource.DataSource = this.xpShares;
+            // 
             // ShowStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1059, 536);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ShowStock";
             this.Text = " ";
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -508,6 +517,10 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xpShares)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpStockExchanges)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpTypes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpCollection1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -552,5 +565,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn colDate;
         private DevExpress.XtraGrid.Columns.GridColumn colPrice;
         private DevExpress.XtraGrid.Columns.GridColumn colNotes;
+        private DevExpress.Xpo.XPCollection xpStockExchanges;
+        private DevExpress.Xpo.XPCollection xpTypes;
+        private DevExpress.Xpo.XPCollection xpCollection1;
+        private DevExpress.Xpo.XPBindingSource xpBindingSource;
     }
 }
