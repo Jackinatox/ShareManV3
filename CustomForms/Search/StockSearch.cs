@@ -82,7 +82,7 @@ namespace ShareManV3
                         {
                             if (i < settings.maxSearches)
                             {
-                                Stock st = new Stock(bestMatch["instrument_name"].ToString(), 2, 2, 2, bestMatch["symbol"].ToString());
+                                Stock st = new Stock(bestMatch["instrument_name"].ToString(), 2, 2, 2);
                                 st.Width = flPanel.ClientSize.Width;
                                 st.Anchor = AnchorStyles.Left;
                                 cplist.Add(st);

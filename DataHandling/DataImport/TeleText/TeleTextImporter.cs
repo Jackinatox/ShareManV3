@@ -3,41 +3,46 @@ using DevExpress.Xpo;
 using ShareManV3.databaseSelfMade;
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using ShareManV3.DataHandling.DataImport.TeleText.Channels;
 
 namespace ShareManV3.DataHandling.DataImport
 {
-    public class TeleTextImporter : DataLoader
+    public class TeleTextImporter
     {
+        private String path;
         private String Sender;
         private DateTime date;
         private List<Share> AllShares;
-        int debugCounter = 0;
+        public int debugCounter = 0;
+        protected List<Stock_Price_History> SPHsToAdd;
+        protected UnitOfWork localUOW;
 
 
-        public TeleTextImporter(String path, Share share)
+
+        public TeleTextImporter(String Path)
         {
-            localUOW = new UnitOfWork();
+            SPHsToAdd = new List<Stock_Price_History>();
 
-            XPCollection<Share> Shares = new XPCollection<Share>(localUOW);
-            AllShares = Shares.ToList();
+            path = Path;
 
 
-            if (Directory.EnumerateFileSystemEntries(path).Any())
+            if (!Directory.EnumerateFileSystemEntries(path).Any())
             {
-                DoImport(path);
+                throw new Exception("Folder is empty");
             }
-            else
-            {
-                MessageBox.Show("Folder is empty");
-            }
+        }
+
+        public void Load()
+        {
+            DoImport(path);
+        }
+
+        public void Commit()
+        {
+            Channel.commit();
         }
 
         private void DoImport(String path)
@@ -51,17 +56,16 @@ namespace ShareManV3.DataHandling.DataImport
 
         private void ScannFile(String file)
         {
-            int lineC = 0;
-            string[] FileLines = File.ReadAllLines(file, Encoding.ASCII);
+            string[] FileLines = File.ReadAllLines(file, Encoding.GetEncoding(437));
 
 
             foreach (String line in FileLines)
             {
+                debugCounter++;
                 if (!string.IsNullOrEmpty(line))
                 {
                     processLine(line);
                 }
-                debugCounter++;
             }
         }
 
@@ -71,19 +75,21 @@ namespace ShareManV3.DataHandling.DataImport
             {
                 switch (Sender)
                 {
-                            //I could move the three methods in the class, but i still think there should be a unified way to 
-                            //call based on a unified identifier not the IF
+                    //I could move the three methods in the class, but i still think there should be a unified way to 
+                    //call based on a unified identifier not the IF
                     case "ZDF":
                         if (!ZDF.CheckDate(line, ref date))
                         {
                             if (ZDF.CheckShare(line))
                             {
-                                ZDF.LoadStock(line, ref date, ref AllShares, ref localUOW, ref SPHsToAdd);
+                                ZDF.LoadStock(line, ref date, ref AllShares, ref localUOW, ref SPHsToAdd, debugCounter);
+
                             }
                         }
                         break;
 
                     case "ARD":
+
                         if (!ARD.CheckDate(line, ref date))
                         {
                             if (ARD.CheckShare(line))

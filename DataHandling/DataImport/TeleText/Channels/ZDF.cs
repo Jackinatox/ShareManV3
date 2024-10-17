@@ -1,16 +1,14 @@
 ﻿using DevExpress.Xpo;
 using ShareManV3.databaseSelfMade;
+using ShareManV3.DataHandling.DataStructs;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace ShareManV3.DataHandling.DataImport.TeleText.Channels
 {
-    internal class ZDF
+    internal class ZDF : Channel
     {
         public static bool CheckDate(string line, ref DateTime date)
         {
@@ -20,7 +18,8 @@ namespace ShareManV3.DataHandling.DataImport.TeleText.Channels
                 {
                     string sub = line.Substring(1, 15);
                     date = DateTime.ParseExact(sub, "dd.MM.yy, HH:mm", CultureInfo.InvariantCulture);
-                    //date = DateOnly.Parse(line.Substring(9));
+                    date = date.Date;
+
                     return true;
                 }
             }
@@ -37,23 +36,21 @@ namespace ShareManV3.DataHandling.DataImport.TeleText.Channels
             return Regex.IsMatch(line, pattern);
         }
 
-        public static bool LoadStock(string line, ref DateTime date, ref List<Share> AllShares, ref UnitOfWork localUOW, ref List<Stock_Price_History> SPHsToAdd)
+        public static void LoadStock(string line, ref DateTime date, ref List<Share> AllShares, ref UnitOfWork inheritedUOW, ref List<Stock_Price_History> SPHsToAdd, int debugCounter)
         {
-            string telName = line.Substring(1, 11);
-            telName = telName.TrimEnd();
-            Share share = AllShares.FirstOrDefault(sh => sh.TeleTextName == telName);
+            try
+            {
+                string telName = line.Substring(1, 11);
+                telName = telName.TrimEnd();
 
-            if (share != null)
+                string temp = line.Substring(11, 9);
+
+                internalList.Add(new SPH(telName, date, Convert.ToDouble(temp)));
+            }
+            catch (Exception)
             {
 
-                Stock_Price_History SPH = new Stock_Price_History(localUOW);
-                SPH.share = share;
-                SPH.Date = date;
-                string temp = line.Substring(11, 9);
-                SPH.Price = Convert.ToDouble(temp);
-                SPHsToAdd.Add(SPH);
             }
-            return false;
         }
     }
 }

@@ -36,6 +36,14 @@
             DevExpress.XtraGrid.GridLevelNode gridLevelNode5 = new DevExpress.XtraGrid.GridLevelNode();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.xpSPH = new DevExpress.Xpo.XPCollection(this.components);
+            this.main_session = new DevExpress.Xpo.Session(this.components);
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPrice = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNotes = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.cb_typ = new System.Windows.Forms.ComboBox();
@@ -63,32 +71,24 @@
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_NewStock = new System.Windows.Forms.Button();
             this.lbl_StockName = new System.Windows.Forms.Label();
-            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
-            this.main_session = new DevExpress.Xpo.Session(this.components);
-            this.xpSPH = new DevExpress.Xpo.XPCollection(this.components);
             this.xpShares = new DevExpress.Xpo.XPCollection(this.components);
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colDate = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPrice = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNotes = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpSPH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.main_session)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nUD_LastDiv)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.main_session)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xpSPH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpShares)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -126,6 +126,77 @@
             this.splitContainer1.Size = new System.Drawing.Size(1053, 381);
             this.splitContainer1.SplitterDistance = 386;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.DataSource = this.xpSPH;
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            gridLevelNode2.RelationName = "Div_Intervall";
+            gridLevelNode3.RelationName = "Börse";
+            gridLevelNode4.RelationName = "Currency";
+            gridLevelNode5.RelationName = "StockType";
+            gridLevelNode1.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode2,
+            gridLevelNode3,
+            gridLevelNode4,
+            gridLevelNode5});
+            gridLevelNode1.RelationName = "share";
+            this.gridControl1.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1});
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(386, 381);
+            this.gridControl1.TabIndex = 0;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // xpSPH
+            // 
+            this.xpSPH.ObjectType = typeof(ShareManV3.databaseSelfMade.Stock_Price_History);
+            this.xpSPH.Session = this.main_session;
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colDate,
+            this.colPrice,
+            this.colNotes});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            // 
+            // colDate
+            // 
+            this.colDate.Caption = "Datum";
+            this.colDate.FieldName = "Date";
+            this.colDate.Name = "colDate";
+            this.colDate.Visible = true;
+            this.colDate.VisibleIndex = 0;
+            // 
+            // colPrice
+            // 
+            this.colPrice.Caption = "Preis";
+            this.colPrice.FieldName = "Price";
+            this.colPrice.Name = "colPrice";
+            this.colPrice.Visible = true;
+            this.colPrice.VisibleIndex = 1;
+            // 
+            // colNotes
+            // 
+            this.colNotes.Caption = "Notizen";
+            this.colNotes.FieldName = "Notes";
+            this.colNotes.Name = "colNotes";
+            this.colNotes.Visible = true;
+            this.colNotes.VisibleIndex = 2;
+            // 
+            // chartControl1
+            // 
+            this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartControl1.Location = new System.Drawing.Point(0, 0);
+            this.chartControl1.Name = "chartControl1";
+            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
+            this.chartControl1.Size = new System.Drawing.Size(663, 381);
+            this.chartControl1.TabIndex = 0;
             // 
             // tabControl1
             // 
@@ -404,79 +475,10 @@
             this.lbl_StockName.Text = "label1";
             this.lbl_StockName.UseMnemonic = false;
             // 
-            // chartControl1
-            // 
-            this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartControl1.Location = new System.Drawing.Point(0, 0);
-            this.chartControl1.Name = "chartControl1";
-            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartControl1.Size = new System.Drawing.Size(663, 381);
-            this.chartControl1.TabIndex = 0;
-            // 
-            // xpSPH
-            // 
-            this.xpSPH.ObjectType = typeof(ShareManV3.databaseSelfMade.Stock_Price_History);
-            // 
             // xpShares
             // 
             this.xpShares.ObjectType = typeof(ShareManV3.databaseSelfMade.Share);
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.DataSource = this.xpSPH;
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Div_Intervall";
-            gridLevelNode3.RelationName = "Börse";
-            gridLevelNode4.RelationName = "Currency";
-            gridLevelNode5.RelationName = "StockType";
-            gridLevelNode1.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2,
-            gridLevelNode3,
-            gridLevelNode4,
-            gridLevelNode5});
-            gridLevelNode1.RelationName = "share";
-            this.gridControl1.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
-            this.gridControl1.Location = new System.Drawing.Point(0, 0);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(386, 381);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colDate,
-            this.colPrice,
-            this.colNotes});
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            // 
-            // colDate
-            // 
-            this.colDate.Caption = "Datum";
-            this.colDate.FieldName = "Date";
-            this.colDate.Name = "colDate";
-            this.colDate.Visible = true;
-            this.colDate.VisibleIndex = 0;
-            // 
-            // colPrice
-            // 
-            this.colPrice.Caption = "Preis";
-            this.colPrice.FieldName = "Price";
-            this.colPrice.Name = "colPrice";
-            this.colPrice.Visible = true;
-            this.colPrice.VisibleIndex = 1;
-            // 
-            // colNotes
-            // 
-            this.colNotes.Caption = "Notizen";
-            this.colNotes.FieldName = "Notes";
-            this.colNotes.Name = "colNotes";
-            this.colNotes.Visible = true;
-            this.colNotes.VisibleIndex = 2;
+            this.xpShares.Session = this.main_session;
             // 
             // ShowStock
             // 
@@ -491,6 +493,11 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xpSPH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.main_session)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -500,12 +507,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.main_session)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xpSPH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xpShares)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
