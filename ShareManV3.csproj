@@ -151,6 +151,12 @@
     <Compile Include="CustomForms\ShowStock.Designer.cs">
       <DependentUpon>ShowStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomForms\ShowStockNeeew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomForms\ShowStockNeeew.Designer.cs">
+      <DependentUpon>ShowStockNeeew.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataHandling\DataImport\TeleText\Channels\ARD.cs" />
     <Compile Include="DataHandling\DataImport\TeleText\Channels\Channel.cs" />
     <Compile Include="DataHandling\DataImport\TeleText\Channels\ZDF.cs" />
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomForms\ShowStock.resx">
       <DependentUpon>ShowStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomForms\ShowStockNeeew.resx">
+      <DependentUpon>ShowStockNeeew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

@@ -27,7 +27,7 @@ namespace ShareManV3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var D = new ShowStock();
+            var D = new ShowStockk();
             D.Show();
         }
 

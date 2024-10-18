@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace ShareManV3.CustomForms
 {
-    public partial class ShowStock : Form
+    public partial class ShowStockk : Form
     {
         private BindingSource bindingSource = new System.Windows.Forms.BindingSource();
         private CriteriaOperator shareFilter, dateFilter;
@@ -21,7 +21,7 @@ namespace ShareManV3.CustomForms
         private Share newShare = null;
 
 
-        public ShowStock()
+        public ShowStockk()
         {
             InitializeComponent();
             nUD_LastDiv.Controls[0].Visible = false;
